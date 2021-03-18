@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="@dimen/margin_15dp">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_button_cevap"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+         />
+    <Button
+        android:id="@+id/btnTikla"
+        android:layout_width="@dimen/width_100dp"
+        android:layout_height="@dimen/width_100dp"
+        android:text="tikla"/>
+
+
+</LinearLayout>

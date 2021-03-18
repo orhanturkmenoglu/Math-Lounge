@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_one"
+    tools:context=".TestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_100dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/bg_top_"
+            android:layout_margin="@dimen/margin_15dp">
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="0.2"
+                >
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="35dp"
+                   android:layout_marginLeft="@dimen/margin_15dp"
+                   android:src="@drawable/clock"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1.8"
+                >
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_margin="@dimen/margin_20dp"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:max="15"
+                    android:progress="8"
+                    android:progressDrawable="@drawable/bg_progress"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvSayac"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="1/15"
+                android:background="@drawable/bg_sayac_background"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/boogaloo_regular"
+                android:textColor="#f8f8f8"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/text_size_15dp"
+                android:src="@drawable/ic_star"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/width_200dp"
+            android:layout_margin="@dimen/margin_15dp"
+            android:background="@drawable/bg_text_background"
+            android:fontFamily="@font/boogaloo_regular"
+            android:gravity="center"
+            android:padding="@dimen/padding_10dp"
+            android:text="5 x 3 = ?"
+            android:textSize="@dimen/text_size_45dp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100dp"
+            android:layout_margin="@dimen/margin_15dp"
+            android:padding="@dimen/padding_10dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="@dimen/width_140dp"
+                    android:layout_height="@dimen/height_80dp"
+                    android:background="@drawable/bg_button_cevap"
+                    android:clickable="true"
+                    android:onClick="onButtonClick"
+                    android:text="15"
+                    android:textSize="@dimen/text_size_30dp"
+                    android:textColor="#f8f8f8"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:padding="@dimen/padding_15dp"
+                    android:scaleType="centerInside"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="@dimen/width_140dp"
+                    android:layout_height="@dimen/height_80dp"
+                    android:background="@drawable/bg_b_cevap"
+                    android:clickable="true"
+                    android:onClick="onButtonClick"
+                    android:padding="@dimen/padding_15dp"
+                    android:text="16"
+                    android:textSize="@dimen/text_size_30dp"
+                    android:textColor="#f8f8f8"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:scaleType="centerInside"></Button>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_100dp"
+            android:layout_margin="@dimen/margin_15dp"
+            android:padding="@dimen/padding_10dp"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="@dimen/width_140dp"
+                    android:layout_height="@dimen/height_80dp"
+                    android:background="@drawable/bg_c_cevap"
+                    android:clickable="true"
+                    android:onClick="onButtonClick"
+                    android:padding="@dimen/margin_15dp"
+                    android:text="17"
+                    android:textSize="@dimen/text_size_30dp"
+                    android:textColor="#f8f8f8"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:scaleType="centerInside"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="@dimen/width_140dp"
+                    android:layout_height="@dimen/height_80dp"
+                    android:background="@drawable/bg_d_cevap"
+                    android:clickable="true"
+                    android:onClick="onButtonClick"
+                    android:padding="@dimen/padding_15dp"
+                    android:text="18"
+                    android:textSize="@dimen/text_size_30dp"
+                    android:textColor="#f8f8f8"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:scaleType="centerInside"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="275dp"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/ress2">
+
+    </ImageView>
+
+
+</RelativeLayout>

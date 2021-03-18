@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/margin_15dp"
+        android:padding="@dimen/padding_5dp">
+
+        <ImageView
+            android:id="@+id/imgRate"
+            android:layout_width="@dimen/width_50dp"
+            android:layout_height="@dimen/height_50dp"
+            android:background="@drawable/bg_share_background"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:src="@drawable/star"></ImageView>
+
+        <ImageView
+            android:id="@+id/imgPlayStore"
+            android:layout_width="@dimen/width_50dp"
+            android:layout_height="@dimen/height_50dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@drawable/googleplay_menu"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tvAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/peeps"
+            android:gravity="center"
+            android:text="Math
+             For Kids"
+            android:textColor="#f8f8f8"
+            android:textSize="55dp"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:id="@+id/lnrLearn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70dp"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_menu_background"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_8dp"
+                    android:src="@drawable/play"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:gravity="center"
+                    android:text="LEARN"
+                    android:textColor="#f8f8f8"
+                    android:textSize="@dimen/text_size_25dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrPratice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70dp"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_pratice_background"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5dp"
+                    android:src="@drawable/book"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:gravity="center"
+                    android:text="PRATICE"
+                    android:textColor="#f8f8f8"
+                    android:textSize="@dimen/text_size_25dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrTest"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70dp"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_ranking_background"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5dp"
+                    android:src="@drawable/test"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:gravity="center"
+                    android:text="TEST"
+                    android:textColor="#f8f8f8"
+                    android:textSize="@dimen/text_size_25dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnrExit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_70dp"
+            android:layout_margin="25dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_exit_background"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_5dp"
+                    android:src="@drawable/exit"></ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/boogaloo_regular"
+                    android:gravity="center"
+                    android:text="EXIT GAME"
+                    android:textColor="#f8f8f8"
+                    android:textSize="@dimen/text_size_25dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
